@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exness Website CLon With Html, Tailwind CSS and Java Script</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="/src/input.css">
+</head>
+<body>
+    
+                  <!-- NavBar -->
+    <nav class="p-2 flex justify-between">
+        <div class="flex items-center gap-12">
+            <a href="#" class="">
+                <img class="pl-2 h-20  w-[9rem] lg:w-40" src="/Images/logo.png" alt="Logo">
+            </a>
+            <div class="links hidden lg:flex items-center text-[1.1rem]  gap-5">
+              <a href="#" class="hover:text-gray-500 duration-300">Trading</a>
+              <a href="#" class="hover:text-gray-500 duration-300">Markets</a>
+              <a href="#" class="hover:text-gray-500 duration-300">Platforms</a>
+              <a href="#" class="hover:text-gray-500 duration-300">Tools</a>
+              <a href="#" class="hover:text-gray-500 duration-300">Company</a>
+              <a href="#" class="hover:text-gray-500 duration-300 flex items-center gap-2"><span>Partners</span><i class="fa-solid fa-arrow-right-long mt-1"></i></a>
+            </div>
+        </div>
+        <div class="btns flex items-center lg:gap-4">
+            <button class="hidden lg:block bg-[#FFE535] px-6 py-3  font-medium text-[1.2rem]  rounded-lg hover:bg-yellow-300 duration-300">Register</button>
+            <button class="text-lg  bg-[#EDF0F2] font-medium text-lg text-center px-6 py-3 rounded-lg hover:bg-gray-200 duration-300">Sign In</button>
+            <button class="lg:hidden p-2" onclick="handleMenu()">
+                <i class="fa-solid fa-bars text-gray-500 text-2xl "></i>
+            </button>
+            <button class="hidden mr-3 lg:block flex items-center " ><i class="fa-solid fa-globe text-2xl mr-1"></i><span class="text-[1.2rem]">EN</span></button>
+        </div>
+       
+             <!-- Nav-Dialog Menu -->
+        <div id="Nav-Dialog" class="fixed z-50 bg-white inset-0 lg:hidden hidden ">
+            <div class="nav-menu p-2 flex justify-between">
+                <a href="#" class="">
+                    <img class="pl-2 h-20  w-[9rem] lg:w-40" src="/Images/logo.png" alt="Logo">
+                </a>
+              <div class="btns flex items-center md:gap-4">
+                <button class="lg:hidden p-2 bg-white " onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-gray-500  text-2xl "></i>
+                </button>
+             </div>
+
+            </div>
+            <div class="mt-4 flex block flex-col  gap-5">
+                <div>
+                    <a href="#" class=" text-[1.1rem] px-7">Trading &nbsp;></a>
+
+                </div>
+                <div>
+                    <a href="#" class=" text-[1.1rem] px-7">Markets &nbsp;></a>
+                    
+                </div>
+                <div>
+                    <a href="#" class=" text-[1.1rem] px-7">PlatForms &nbsp;></a>
+                    
+                </div>
+                <div>
+                    <a href="#" class=" text-[1.1rem] px-7">Tools &nbsp;></a>
+                    
+                </div>
+                <div class=" border-b-2 pb-9">
+                    <a href="#" class=" text-[1.1rem] px-7">Company &nbsp;></a>
+                </div>
+                <div class="border-b-2 pb-9">
+                    <a href="#" class=" text-[1.2rem] px-7">Partners <i class="fa-solid fa-arrow-right-long mt-2 ml-2"></i></a>
+                </div>
+            </div>
+          
+            <div class="flex justify-center gap-2 mt-6">
+            <button class=" bg-[#FFE535] px-12 py-3  font-medium text-[1.2rem]  rounded-lg hover:bg-yellow-300 duration-300">Resgister</button>
+            <button class="text-lg  bg-[#EDF0F2] font-medium text-lg text-center px-14 py-3 rounded-lg hover:bg-gray-200 duration-300">Sign In</button>
+            </div>
+           
+            <div class="flex justify-center mt-[1rem]">
+            <button class="mr-3  flex items-center " ><i class="fa-solid fa-globe text-2xl mr-1"></i><span class="text-[1.2rem]">EN</span></button>
+            </div>
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </nav>
+                <!-- Hero Section -->
+    <div class="main flex mt-5 md:mt-0 justify-center  h-[26rem] w-full">
+        <div class="gif_part flex justify-center mt-4  h-[27rem] w-[24rem] md:h-[27rem] md:w-[40rem]   md:bg-[url('/Images/background_gif.gif')] object-cover object-center bg-no-repeat">
+             <div class="md:ml-10" >
+            <h1 class="font-medium mt-[1rem] text-6xl md:text-7xl text-center md:mt-[7rem]">Upgrade the way
+                you trade</h1>
+                <p class="text-[1.3rem] text-center mt-7">Trade with the world’s largest retail broker and benefit from better-than-market conditions.</p>
+              <div class="flex flex-col md:flex-row mt-[3rem] md:mt-[1.4rem] justify-center gap-6">
+                <button class="font-medium px-7 text-[1.3rem] rounded-lg py-3 bg-yellow-300 hover:bg-yellow-400 duration-300">Register</button>
+                <button class="font-medium px-6 text-[1.3rem] rounded-lg py-3 bg-gray-200 hover:bg-gray-300 duration-300">Try Free Demo</button>
+                </div>
+             </div>
+        </div>
+    </div>
+
+                 <!-- Stat's Section -->
+     <div class="mt-[8rem] md:mt-16 md:pt-[6rem]   w-full min-h-[22rem] flex flex-wrap justify-center">
+    <section class="text-gray-600 body-font md:border-t-2 border-gray-200">
+        <div class="container px-5 py-10 sm:pt-3">
+            <div class=" grid grid-cols-auto md:flex justify-center gap-7 sm:gap-[5rem]">
+                <div class=" sm:w-1/4 w-full flex gap-3 items-center text-center">
+                    <img class="w-10 h-10 sm:w-12 sm:h-12" src="/Images/users_group_4fae4ed806 (1).svg" alt="">
+                    <p class="leading-relaxed text-[1.2rem]">800,000+ active traders</p>
+                </div>
+                <div class=" sm:w-1/4 w-full flex gap-4 md:gap-1 items-center text-center">
+                    <img class="w-10 h-10 sm:w-12 sm:h-12" src="/Images/license_831ed49ca9.svg" alt="">
+                    <p class="leading-relaxed text-[1.2rem]">Multiple regulatory licenses</p>
+                </div>
+                <div class=" sm:w-1/4 w-full flex gap-4 md:gap-1 items-center text-center">
+                    <img class="w-10 h-10 sm:w-12 sm:h-12" src="/Images/custom_support_78bcff8edb.svg" alt="">
+                    <p class="leading-relaxed text-[1.2rem]">24/7 customer support</p>
+                </div>
+                <div class=" sm:w-1/4 w-full flex gap-4  md:gap-1 items-center text-center">
+                    <img class="w-10 h-10 sm:w-12 sm:h-12" src="/Images/certificate_090f2be3df.svg" alt="">
+                    <p class="leading-relaxed text-[1.2rem]">PCI DSS certified</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+                  <!--MArket Section-->
+
+     <div class="bg-[#070E20] h-[150rem] lg:h-[75rem] w-full ">
+                <div class="text text-center text-white pt-[8rem]">
+                    <h1 class="font-medium text-[2.5rem] md:text-[3.4rem] ">Thrive in the gold & oil markets</h1>
+                    <p class="text-gray-500 mt-2 text-[1.1rem] md:text-[1.3rem]">Trading conditions can make or break a strategy, that's why you need the best.</p>
+                </div>
+                  <!-- DIV*PIC*DIV -->
+                   <div class="flex flex-wrap  justify-center  md:gap-20">
+                       <div class="text1 h-[35rem] w-[24rem]  mt-[10rem] text-center">
+                        <button class="py-1 px-4 rounded-lg bg-gray-500 text-white">Withdrawals</button> 
+                        <h1 class="text-white text-[1.3rem] mt-5">Instant withdrawals</h1>  
+                        <p class="text-gray-500 mt-2">Get your deposits and withdrawals approved the moment you click the button.¹</p>
+                        <button class="py-1 px-4 rounded-lg bg-gray-500 text-white mt-[4rem]">Spreads</button> 
+                        <h1 class="text-white text-[1.3rem] mt-5">The best spreads² on gold</h1>  
+                        <p class="text-gray-500 mt-2">Trade with the tightest & most stable spreads in the market.</p>
+                        <button class="py-1 px-4 rounded-lg bg-gray-500 text-white mt-[3rem]">Support</button> 
+                        <h1 class="text-white text-[1.3rem] mt-5">24/7 live support</h1>  
+                        <p class="text-gray-500 mt-2">Get answers in minutes. Contact our support team 24/7 by phone, email, or live chat.</p>   
+                       </div>
+
+
+
+                               <div class="pic h-[27rem] w-[17rem] md:h-[42rem] md:w-[29rem] bg-black mt-[4rem]">
+                                 <img class=" object-cover object-center" src="/Images/mobile.png" alt="">
+                               </div>
+
+
+
+
+                        <div class="text1 h-[35rem] w-[24rem]  mt-[10rem] text-center">
+                        <button class="py-1 px-4 rounded-lg bg-gray-500 text-white">Execution speed</button> 
+                        <h1 class="text-white text-[1.3rem] mt-5">Ultra-fast executions</h1>    
+                        <p class="text-gray-500 mt-2">Execute your orders in milliseconds, no matter how big they are.</p>
+                        <button class="py-1 px-4 rounded-lg bg-gray-500 text-white mt-[4rem]">Swaps</button> 
+                        <h1 class="text-white text-[1.3rem] mt-5">No overnight fees</h1>  
+                        <p class="text-gray-500 mt-2">Hold your leveraged positions for as long as you like, swap-free. T&C apply.</p>
+                        <button class="py-1 px-4 rounded-lg bg-gray-500 text-white mt-[3rem]">Platforms</button>  
+                        <h1 class="text-white text-[1.3rem] mt-5">Reliable platforms</h1>  
+                        <p class="text-gray-500 mt-2">Experience the ultimate in stability and execution speed. No matter the size of your order.</p>   
+                        </div>
+                   </div>
+             
+
+
+
+
+
+
+
+     </div> 
+                 <!--Table Section-->
+                 <div class="bg-[#070E20] ">
+                    <section class="text-gray-600 body-font">
+                        <div class="container px-5 py-24 mx-auto">
+                            <div class="flex flex-col text-center w-full mb-20">
+                                <h1 class="sm:text-5xl text-3xl font-medium  md:mt-[26rem] lg:mt-[5rem] title-font mb-2 text-white">
+                                    Trade assets from global markets
+                                </h1>
+                                <p class="lg:w-2/3 text-[1.1rem] md:text-[1.3rem] text-gray-400 mt-4 mx-auto leading-relaxed text-base">
+                                    Capitalize on every opportunity with the world’s most popular assets.
+                                </p>
+                            </div>
+                            <div class="lg:w-2/3 w-full mx-auto overflow-auto">
+                                <table class="table-auto w-full text-left whitespace-no-wrap">
+                                    <thead>
+                                        <tr class="border-b-2">
+                                            <th class="px-10 py-3 title-font tracking-wider font-medium text-gray-400 text-sm rounded-tl rounded-bl">
+                                                Instruments
+                                            </th>
+                                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-400 text-sm bg-[#070E20] hidden md:table-cell">
+                                                Leverage
+                                            </th>
+                                            <th class="px-4 py-3 title-font text-center tracking-wider font-medium text-gray-400 text-sm">
+                                                Avg. spread³, pips
+                                            </th>
+                                            <th class="px-4 py-3 title-font tracking-wider font-medium text-gray-400 text-sm bg-[#070E20] hidden md:table-cell">
+                                                Swap-free
+                                            </th>
+                                            <th class="px-4 py-3 title-font tracking-wider font-medium text-[#070E20] text-sm bg-[#070E20] hidden md:table-cell">
+                                                swapfree
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-t-2 border-gray-700">
+                                            <td class="px-4 py-3 text-white flex gap-2">
+                                                <div class="">
+                                                <img class="h-11" src="/Images/XAUUSD_64f4c10126.png" alt=""> 
+                                                </div>
+                                                <div class="flex flex-col">
+                                                    <span>XAUUSD</span>
+                                                    <span class="text-gray-500  text-[0.8rem] md:text-[1rem]">Gold vs US Dollar</span>
+                                                </div>
+                                                
+                                            </td>
+                                            <td class="px-4 py-3 text-white hidden md:table-cell">Customizable</td>
+                                            <td class="px-4 py-3 text-white text-center">11.2</td>
+                                            <td class="px-4 py-3 text-white hidden md:table-cell">	
+                                                Available</td>
+                                                <td class="px-4 py-3 text-gray-400 hover:text-white duration-300 hidden md:table-cell">	
+                                                    Metals ></td>
+
+                                        </tr>
+                                        <tr class="border-t-2 border-gray-700">
+                                            <td class="px-4 py-3 text-white flex gap-2">
+                                                <div class="">
+                                                <img class="h-11" src="/Images/USOIL_8bb32a7dca.png" alt=""> 
+                                                </div>
+                                                <div class="flex flex-col">
+                                                    <span>USOIL</span>
+                                                    <span class="text-gray-500  text-[0.8rem] md:text-[1rem]">Crude Oil</span>
+                                                </div>
+                                                
+                                            </td>
+                                            <td class="px-4 py-3 text-white hidden md:table-cell">1:200</td>
+                                            <td class="px-4 py-3 text-white text-center">1.2</td>
+                                            <td class="px-4 py-3 text-white hidden md:table-cell">	
+                                                Available</td>
+                                                <td class="px-4 py-3 text-gray-400 hover:text-white duration-300 hidden md:table-cell">	
+                                                    Energies ></td>
+                                        </tr>
+                                        <tr class="border-t-2 border-gray-700">
+                                            <td class="px-4 py-3 text-white flex gap-2">
+                                                <div class="">
+                                                <img class="h-11" src="/Images/EURUSD_e36fe5b220.png" alt=""> 
+                                                </div>
+                                                <div class="flex flex-col">
+                                                    <span>EURUSD</span>
+                                                    <span class="text-gray-500  text-[0.8rem] md:text-[1rem]">Euro vs US Dollar</span>
+                                                </div>
+                                                
+                                            </td>
+                                            <td class="px-4 py-3 text-white hidden md:table-cell">Customizable</td>
+                                            <td class="px-4 py-3 text-white text-center">0.6</td>
+                                            <td class="px-4 py-3 text-white hidden md:table-cell">	
+                                                Available</td>
+                                                <td class="px-4 py-3 text-gray-400 hover:text-white duration-300 hidden md:table-cell">	
+                                                    Currencies ></td>
+                                        </tr>
+                                        <tr class="border-t-2 border-gray-700">
+                                            <td class="px-4 py-3 text-white flex gap-2">
+                                                <div class="">
+                                                <img class="h-11" src="/Images/US_30_1c61cd15fd.png" alt=""> 
+                                                </div>
+                                                <div class="flex flex-col">
+                                                    <span>US30</span>
+                                                    <span class="text-gray-500  text-[0.8rem] md:text-[1rem]">US Wall Street 30 Index</span>
+                                                </div>
+                                                
+                                            </td>
+                                            <td class="px-4 py-3 text-white hidden md:table-cell">1:400</td>
+                                            <td class="px-4 py-3 text-white text-center">1.9</td>
+                                            <td class="px-4 py-3 text-white hidden md:table-cell">	
+                                                Available</td>
+                                                <td class="px-4 py-3 text-gray-400 hover:text-white duration-300 hidden md:table-cell">	
+                                                    Indices ></td>
+                                        </tr>
+                                        <tr class="border-t-2 border-b-2 border-gray-700">
+                                            <td class="px-4 py-3 text-white flex gap-2">
+                                                <div class="">
+                                                <img class="h-11" src="/Images/APPL_07775c0743.png" alt=""> 
+                                                </div>
+                                                <div class="flex flex-col">
+                                                    <span>AAPL</span>
+                                                    <span class="text-gray-500  text-[0.8rem] md:text-[1rem]">Apple Inc.</span>
+                                                </div>
+                                                
+                                            </td>
+                                            <td class="px-4 py-3 text-white hidden md:table-cell">1:20</td>
+                                            <td class="px-4 py-3 text-white text-center">0.9</td>
+                                            <td class="px-4 py-3 text-white hidden md:table-cell">Swap applied</td>
+                                            <td class="px-4 py-3 text-gray-400 hover:text-white duration-300 hidden sm:table-cell">	
+                                                Stocks ></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="flex justify-center flex-col md:flex-row gap-5 pt-10">
+                                <button class="py-2 px-11 bg-yellow-300 rounded-lg font-medium text-lg text-[1.3rem] hover:bg-yellow-400 duration-300">
+                                    Register
+                                </button>
+                                <button class="py-2 px-6 bg-gray-800 rounded-lg font-medium text-lg text-[1.3rem] hover:bg-gray-900 text-white duration-300">
+                                    Try Free Demo
+                                </button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <!-- Seize Opportunity Section -->
+                <div class="h-[55rem] flex flex-col-reverse lg:flex-row justify-center gap-5  md:gap-12 items-center">
+                    <div class="h-[23rem] w-[20rem] md:h-[39rem] md:w-[37rem] bg-black ">
+                        <img class="object-cover object-center h-full w-full" src="/Images/seize.png" alt="">
+                    </div>
+                    <div class="block md:hidden h-[27rem] w-[24rem] flex flex-col items-center text-center">
+                        <div> 
+                            <img class="h-[9rem] mt-14 w-full object-cover" src="/Images/sizelogo.png" alt="">
+                        </div>
+                        <div class="">
+                            <h1 class="text-[2.4rem] font-medium mt-6">Seize every opportunity</h1>
+                            <p class="mt-8 ml-11 text-center w-fit w-[19rem]">Trade online anytime, anywhere. On web, mobile and desktop.</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block text h-[44rem] w-[40rem] ">
+                         <img class="h-[7rem] mt-[15rem]" src="/Images/sizelogo.png" alt="">
+                         <h1 class="text-[2.5rem] mt-3 font-medium">Seize every opportunity</h1>
+                         <p class="text-gray-800 text-[1.3rem] mt-3">Trade online anytime, anywhere. On web, mobile and desktop.</p>
+                         <div class="flex flex-col gap-1 mt-7">
+                            <a href="#" class="text-[1.3rem] text-gray-500 hover:text-black hover:underline pb-2 duration-300">MetaTrader 5 <span>></span> </a>
+                            <a href="#" class="text-[1.3rem] text-gray-500 hover:text-black hover:underline pb-2 duration-300">Exness Terminal <span>></span> </a>
+                            <a href="#" class="text-[1.3rem] text-gray-500 hover:text-black hover:underline pb-2 duration-300">Exness Trade App <span>></span> </a>
+                         </div>
+                        </div>
+                </div>
+                <!-- Security Section -->
+
+                <div class="h-[55rem] flex flex-col-reverse lg:flex-row justify-center gap-5  md:gap-12 items-center">
+                    
+                    <div class="block md:hidden h-[27rem] w-[24rem] flex flex-col items-center text-center">
+                        <div> 
+                            <img class="h-[9rem] mt-14 w-full object-cover" src="/Images/sizelogo.png" alt="">
+                        </div>
+                        <div class="">
+                            <h1 class="text-[2.4rem] font-medium mt-6">Seize every opportunity</h1>
+                            <p class="mt-8 ml-11 text-center w-fit w-[19rem]">Trade online anytime, anywhere. On web, mobile and desktop.</p>
+                        </div>
+                    </div>
+                    <div class="hidden md:block text h-[44rem] w-[40rem] md:mt-[24rem] lg:mt-0 ">
+                         <img class="h-[7rem] mt-[15rem]" src="/Images/exness_security_26f7785c26.svg" alt="">
+                         <h1 class="text-[2.5rem] mt-3  font-medium">Your security is our priority</h1>
+                         <p class="text-gray-800 text-[1.3rem] mt-3">From secure payments to negative balance protection, you are covered from every angle.</p>
+                         <div class="flex flex-col gap-1 mt-7">
+                            <a href="#" class="text-[1.3rem] text-gray-500 hover:text-black hover:underline pb-2 duration-300">Client Protection <span>></span> </a>
+                            <a href="#" class="text-[1.3rem] text-gray-500 hover:text-black hover:underline pb-2 duration-300">Why Exness <span>></span> </a>
+                         </div>
+                        </div>
+                        <div class="h-[23rem] w-[20rem] md:h-[39rem] md:w-[37rem] ">
+                            <img class="object-cover object-center h-full w-full md:mt-[37rem] lg:mt-0" src="/Images/men.png" alt="">
+                        </div>
+                </div>
+
+               
+             
+                  <!-- Exness Team Pro -->
+                 <div class="w-full  flex items-center bg-black  justify-center md:mt-[8rem] lg:mt-0">
+    <div class="w-full h-full bg-[url('/Images/teams.png.jpg')] bg-no-repeat lg:py-[12rem] bg-cover bg-center flex flex-col items-center md:items-start text-center md:text-left px-5 md:px-10 lg:px-20 py-10">
+        <h1 class="text-white font-medium text-3xl md:text-4xl lg:text-5xl">Exness Team Pro</h1>
+        <p class="text-gray-400 max-w-xl text-lg md:text-xl mt-3">
+            Get to know our team of professional traders from around the world and learn from their expertise on all things trading and strategy.
+        </p>
+        <button class="bg-yellow-300 py-3 px-8 rounded-lg font-medium text-lg mt-5 transition hover:bg-yellow-400">
+            Meet the team
+        </button>
+    </div>
+                 </div>
+                   
+
+                <!-- Article Section -->
+ <div class="w-full text-center  mt-24 px-5">
+    <h1 class="text-center text-3xl md:text-4xl font-medium">Keep up with Exness</h1>
+    <p class="text-center text-lg md:text-xl text-gray-600 mt-2">
+        Stay on top of our news, product and technology updates, events, partnerships, and more.
+    </p>
+    <a href="#" class="text-gray-400 text-lg md:text-xl mt-4 block hover:text-gray-500 hover:underline">
+        Read more articles >
+    </a>
+</div>
+                
+
+
+              <!-- Cards -->
+         <div class="cards mt-5 md:h-[50rem] w-full  flex gap-5 flex-wrap justify-center items-center">
+
+            <!-- Card#01 -->
+             <div class="card1 h-[26rem] w-[23rem] md:h-[30rem] md:w-[28rem] rounded-lg border hover:border-gray-900 duration-300">
+                <div class="">
+                    <img src="/Images/tradingsilver.png" alt="">
+                </div>
+                <div class="text p-4">
+                 <button class="rounded-r-lg bg-gray-200 px-3 py-1">Economic calender watch</button>
+                 <h2 class="pt-5 font-medium text-[1.3rem]">Week 7 Exness economic calender report 2025</h2>
+                </div>
+             </div>
+             
+             <!-- Card#02 -->
+             <div class="card1 h-[26rem] w-[23rem] md:h-[30rem] md:w-[28rem] rounded-lg border hover:border-gray-900 duration-300">
+                <div class="">
+                    <img src="/Images/pipes.png" alt="">
+                </div>
+                <div class="text p-4">
+                 <button class="rounded-r-lg bg-gray-200 px-3 py-1">Exness advantages</button>
+                 <h2 class="pt-5 font-medium text-[1.3rem]">Setting the standard with the best and most stable spreads on Exness' top assests</h2>
+                </div>
+             </div>
+             
+             <!-- Card#03 -->
+             <div class="card1 h-[26rem] w-[23rem] md:h-[30rem] md:w-[28rem] rounded-lg border hover:border-gray-900 duration-300">
+                <div class="">
+                    <img src="/Images/trading.png" alt="">
+                </div>
+                <div class="text p-4">
+                 <button class="rounded-r-lg bg-gray-200 px-3 py-1">Trading news</button>
+                 <h2 class="pt-5 font-medium text-[1.3rem]">Week 6 trading news roundup</h2>
+                </div>
+             </div>
+
+         </div>
+                    <!-- Bar Section -->
+              <div class="h-screen md:h-[20rem]  flex flex-col justify-end ">
+                 <div class="bar_section h-80 w-full bg-[url(/Images/bar.png)] bg-cover bg-center flex justify-center items-end">
+                      <div class="black_bar w-11/12 max-w-5xl bg-black rounded-xl flex flex-col md:flex-row items-center justify-center flex-wrap gap-10 p-6 md:p-10">
+                         <div class="text-center md:text-left text-white max-w-lg">
+                             <h1 class="font-medium text-2xl md:text-3xl">Trade with a trusted broker today</h1>
+                               <p class="text-gray-400 mt-2">See for yourself why Exness is the broker of choice for over 800,000 traders and 64,000 partners.</p>
+                                 </div>
+                      <div class="flex gap-4 mt-4 md:mt-0">
+                       <button class="bg-yellow-300 py-2 px-5 font-medium rounded-lg hover:bg-yellow-400 transition">Register</button>
+                         <button class="bg-[#172133] text-white py-2 px-5 font-medium rounded-lg hover:bg-gray-900 transition">Try Free Demo</button>
+                      </div>
+                 </div>
+              </div>
+            </div>
+
+
+
+            <!-- Footer Section -->
+      
+            <div class="flex items-center justify-center w-full mt-24  px-4 ">
+    <div class="text-gray-500 text-sm  pb-14 md:pb-0 max-w-4xl text-center md:text-left">
+        <p class="mb-4">1-At Exness, 95% of withdrawals are processed instantly (under 1 minute). Once your funds leave our custody, it's up to your chosen payment provider to process the funds and credit your account.</p>
+        <p class="mb-4">2-Best spreads refers to average or max spreads offered by Exness, excluding agents’ commission for XAUUSD for the first two seconds after high-impact news, from January to May 2024, compared with five other large brokers.</p>
+        <p class="border-b-3 pb-20">3-Spreads may fluctuate and widen due to factors including market volatility, news releases, economic events, when markets open or close, and the type of instruments being traded.</p>
+    </div>
+            </div>
+             
+
+             <!-- Main Footer -->
+              <div class="main_footer h-[35rem] w-full  ">
+                   <a href="#" class="">
+                    <img class="h-[6rem] pl-[7rem]" src="/Images/logo.png" alt="">
+                   </a>
+                   <div class="footer-sections flex flex-wrap justify-center items-center mt-5 gap-5">
+                    <!-- section #01 -->
+                    <div class="section1 h-[17rem] w-[9rem]  flex flex-col gap-2">
+                      <h2 class="text-black font-medium text-[1.3rem]">Accounts</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Standard accounts</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Professional accounts</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Demo trading account</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Social Trading accounts</h2>
+                    </div>
+                    <!-- section #02 -->
+                    <div class="section1 h-[17rem] w-[8rem] flex flex-col gap-3 "> 
+                        <h2 class="text-black font-medium text-[1.3rem]">Conditions</h2>
+                        <h2 class="text-gray-500 hover:text-gray-600  hover:underline   cursor-pointer">Deposits and withdrawals</h2>
+                        <h2 class="text-gray-500 hover:text-gray-600  hover:underline   cursor-pointer">Fees</h2>
+                        <h2 class="text-gray-500 hover:text-gray-600  hover:underline   cursor-pointer">Client protection</h2>
+                        
+
+                    </div>
+                    <!-- section #03 -->
+                    <div class="section1 h-[17rem] w-[8rem] flex flex-col gap-3">
+                        <h2 class="text-black font-medium text-[1.3rem]">Markets</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Forex CFD</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Commodities CFD</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Stocks CFD</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Indices CFD</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Crypto CFD</h2>
+                    </div>
+                    <!-- section #04 -->
+                    <div class="section1 h-[17rem] w-[10rem] flex flex-col gap-3">
+                        <h2 class="text-black font-medium text-[1.3rem]">Platforms</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">MetaTrader 5</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">MetaTrader 4</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Exness Trade app</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">MetaTrader 5 mobile</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">MetaTrader 4 mobile</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Exness Terminal</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">MetaTrader WebTerminal</h2>
+                    </div>
+                    <!-- section #05 -->
+                    <div class="section1 h-[17rem] w-[8rem] flex flex-col gap-3">
+                        <h2 class="text-black font-medium text-[1.3rem]">Tools</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Analytical tools</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Economic calendar</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Trading calculator</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Currency converter</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Tick history</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">VPS hosting</h2>
+                    </div>
+                    <!-- section #06 -->
+                    <div class="section1 h-[17rem] w-[8rem] flex flex-col gap-3">
+                        <h2 class="text-black font-medium text-[1.3rem]">Markets</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Forex CFD</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Commodities CFD</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Stocks CFD</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Indices CFD</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Crypto CFD</h2>
+                    </div>
+                    <!-- section #07 -->
+                    <div class="section1 h-[17rem] w-[8rem] flex flex-col gap-3">
+                        <h2 class="text-black font-medium text-[1.3rem]">About</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">About us</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Why Exness</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Exness reviews</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Contact us</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Help Center</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Exness in the media</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Exness in the community</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Exness Team Pro</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Blog</h2>
+                    </div>
+                    <!-- section #08 -->
+                    <div class="section1 h-[17rem] w-[8rem] flex flex-col gap-3">
+                        <h2 class="text-black font-medium text-[1.3rem]">Corporate</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Regulation</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Legal documents</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Compensation fund</h2>
+                    </div>
+                       <!-- section #09 -->
+                       <div class="section1 ml-40 md:ml-0 h-[17rem] w-[8rem] flex flex-col gap-3">
+                        <h2 class="text-black font-medium text-[1.3rem]">Solutions</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Premier Program</h2>
+                       <h2 class="text-gray-500 hover:text-gray-600 text-[0.9rem] hover:underline   cursor-pointer">Social Trading</h2>
+                    </div>
+                    </div>
+                    <div class="btn text-gray-500 rounded-lg flex gap-3 text-2xl items-center ml-[4rem] mt-0 md:ml-[5rem] md:mt-[6rem]">
+                        <button class="rounded-full  border border-gray-600 p-2 "><i class="fa-brands fa-facebook"></i></button>
+                        <button class="rounded-full  border border-gray-600 p-2"><i class="fa-brands fa-x-twitter"></i></button>
+                        <button class="rounded-full  border border-gray-600 p-2"><i class="fa-brands fa-instagram"></i></button>
+                        <button class="rounded-full  border border-gray-600 p-2"><i class="fa-brands fa-linkedin-in"></i></button>
+                        <button class="rounded-full  border border-gray-600 p-2"><i class="fa-brands fa-youtube"></i></button>
+                    </div>
+              </div> 
+              
+             
+          
+
+    
+
+
+</body>
+<script src="script.js"></script>
+</html>
