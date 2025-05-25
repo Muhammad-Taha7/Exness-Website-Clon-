@@ -67,7 +67,7 @@ Edit
 Open index.html in your browser.
 
 🔒 Note: This is a static frontend-only clone. No real trading or backend logic is included.
-![image](https://github.com/user-attachments/assets/79fcf15a-6ef7-4eb6-9f79-e58701ebf49a)
+
 
 
 📄 License
