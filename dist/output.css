@@ -753,6 +753,10 @@ video {
   height: 17rem;
 }
 
+.h-\[20rem\] {
+  height: 20rem;
+}
+
 .h-\[23rem\] {
   height: 23rem;
 }
@@ -793,12 +797,8 @@ video {
   height: 100%;
 }
 
-.h-screen {
-  height: 100vh;
-}
-
-.min-h-\[22rem\] {
-  min-height: 22rem;
+.min-h-\[18rem\] {
+  min-height: 18rem;
 }
 
 .w-10 {
@@ -1058,6 +1058,14 @@ video {
 
 .bg-\[url\(\/Images\/bar\.png\)\] {
   background-image: url(/Images/bar.png);
+}
+
+.bg-\[url\(\'https\:\/\/d33vw3iu5hs0zi\.cloudfront\.net\/media\/xxl_exness_home_podcast_mobile_c43ca86330\.jpg\'\)\] {
+  background-image: url('https://d33vw3iu5hs0zi.cloudfront.net/media/xxl_exness_home_podcast_mobile_c43ca86330.jpg');
+}
+
+.bg-\[url\(\'https\:\/\/d33vw3iu5hs0zi\.cloudfront\.net\/media\/home_cta_banner_7bb7b120e2\.jpg\'\)\] {
+  background-image: url('https://d33vw3iu5hs0zi.cloudfront.net/media/home_cta_banner_7bb7b120e2.jpg');
 }
 
 .bg-cover {
@@ -1480,8 +1488,8 @@ video {
     display: none;
   }
 
-  .md\:h-\[0rem\] {
-    height: 0rem;
+  .md\:h-\[20rem\] {
+    height: 20rem;
   }
 
   .md\:h-\[27rem\] {
@@ -1502,26 +1510,6 @@ video {
 
   .md\:h-\[50rem\] {
     height: 50rem;
-  }
-
-  .md\:h-\[1rem\] {
-    height: 1rem;
-  }
-
-  .md\:h-\[5rem\] {
-    height: 5rem;
-  }
-
-  .md\:h-\[10rem\] {
-    height: 10rem;
-  }
-
-  .md\:h-\[20rem\] {
-    height: 20rem;
-  }
-
-  .md\:h-\[15rem\] {
-    height: 15rem;
   }
 
   .md\:w-\[28rem\] {
@@ -1570,6 +1558,10 @@ video {
 
   .md\:bg-\[url\(\'\/Images\/background_gif\.gif\'\)\] {
     background-image: url('/Images/background_gif.gif');
+  }
+
+  .md\:bg-\[url\(\'https\:\/\/i\.postimg\.cc\/gkhhPSHk\/background-gif\.gif\'\)\] {
+    background-image: url('https://i.postimg.cc/gkhhPSHk/background-gif.gif');
   }
 
   .md\:p-10 {
